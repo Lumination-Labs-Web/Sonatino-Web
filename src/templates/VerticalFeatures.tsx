@@ -138,6 +138,12 @@ const VerticalFeatures = () => {
           />
         </div>
       </div>
+      <div className="w-full sm:w-1/2 p-6 mt-10 -mb-20 ml-auto mr-auto">
+        <img
+          src={`${router.basePath}/assets/images/main.png`}
+          alt="Audio Jack"
+        />
+      </div>
     </Section>
   );
 };
