@@ -35,33 +35,33 @@ const VerticalFeatures = () => {
         title="Dedicated DAC and ADC"
         description="High-performance digital-to-analog and analog-to-digital chips deliver 24-bit, 192kHz audio through the built-in 3.5mm audio jack. Simultaneous input/output is possible using a TRRS adapter or headset. The integrated amplifer is capable of driving headphones, and input can be received at line or microphone levels using a built-in microphone preamp."
         image="/assets/images/dac_adc.svg"
-        imageAlt="First feature alt text"
+        imageAlt="DAC and ADC"
       />
       <VerticalFeatureRow
         title="Built-In Amplifier"
         description="Sonatino features a built-in class D mono amplifier capable of driving a small 4Ω speaker at 2.5W, making it incredibly easy to add audio output to your project with minimal external components."
         image="/assets/images/speaker.svg"
-        imageAlt="Second feature alt text"
+        imageAlt="Speaker"
         reverse
       />
       <VerticalFeatureRow
         title="Wireless and Wired Connectivity"
         description="Interact with your project wirelessly from nearby devices, or over the internet. Sonatino has built-in WiFi and Bluetooth 5 (LE) connectivity, USB-C, and 13 general-purpose I/O (GPIO) pins for connecting additional peripherals. And of course, connect audio devices using the built-in 3.5mm audio jack."
         image="/assets/images/connectivity.svg"
-        imageAlt="Third feature alt text"
+        imageAlt="WiFi and Wired Connectivity"
       />
       <VerticalFeatureRow
         title="Abundant Storage Options"
         description="Need a place to store digital audio files or other project data? No problem! Sonatino's microcontroller includes 16 MB of flash memory, 2 MB of PSRAM (useful for code that needs more working memory), as well as a microSD card slot for additional storage."
         image="/assets/images/microsd_flash.svg"
-        imageAlt="Third feature alt text"
+        imageAlt="Flash and microSD Storage"
         reverse
       />
       <VerticalFeatureRow
         title="Battery-Powered Flexibility"
         description="Sonatino can be powered via USB-C, a 5 volt DC power supply, or a 3.7 volt LiPo/Li-ion battery. The built-in battery charger enables USB-C charging of a connected battery while operating the board, and Sonatino helps protect your battery from overcharging and over-discharging. The microcontroller and audio components can even be put into low-power mode for extended battery life."
         image="/assets/images/battery.svg"
-        imageAlt="Third feature alt text"
+        imageAlt="Battery"
       />
       <div className="mt-24 flex flex-col items-center">
         <div className="sm:w-3/4">
@@ -141,7 +141,7 @@ const VerticalFeatures = () => {
       <div className="w-full sm:w-1/2 p-6 mt-10 -mb-20 ml-auto mr-auto">
         <img
           src={`${router.basePath}/assets/images/main.png`}
-          alt="Audio Jack"
+          alt="Sonatino PCB"
         />
       </div>
     </Section>

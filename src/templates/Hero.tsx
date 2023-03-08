@@ -49,8 +49,10 @@ const Hero = () => {
       <Section yPadding="pb-32">
         <div className="w-3/4 sm:w-1/2 sm:mt-10 ml-auto mr-auto px-2 lg:pb-4 sm:scale-150">
           <img
-            src={`${router.basePath}/assets/images/board_zoom.png`}
-            alt="Sonatino board"
+            src={`${router.basePath}/assets/images/sonatino.png`}
+            alt="Sonatino PCB"
+            width={1200}
+            height={795}
           />
         </div>
         <HeroOneButton

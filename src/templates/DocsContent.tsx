@@ -162,7 +162,7 @@ const DocsContent = () => {
           <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
             <img
               src={`${router.basePath}/assets/images/controls.png`}
-              alt="Board Components"
+              alt="Board Controls"
             />
           </div>
           <h3 className="p-4 text-center text-2xl -mb-6">
@@ -171,7 +171,7 @@ const DocsContent = () => {
           <div className="w-1/2 sm:w-1/4 p-6 ml-auto mr-auto -mb-6">
             <img
               src={`${router.basePath}/assets/images/extras.png`}
-              alt="Board Components"
+              alt="Extra Components"
             />
           </div>
           <div className="w-full sm:w-1/2 p-6 ml-auto mr-auto">
@@ -250,7 +250,7 @@ const DocsContent = () => {
           >
             <img
               src={`${router.basePath}/assets/images/pins.png`}
-              alt="Board Components"
+              alt="Sonatino Pins"
             />
           </a>
         </div>
