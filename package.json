@@ -29,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
     "autoprefixer": "^10.4.2",
+    "caniuse-lite": "^1.0.30001462",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.16",
     "eslint": "^8.7.0",

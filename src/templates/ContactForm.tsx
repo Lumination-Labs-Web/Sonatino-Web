@@ -62,6 +62,8 @@ const ContactForm = () => {
                 submit
                 disabled={
                   !(
+                    name &&
+                    name.length > 2 &&
                     email &&
                     email.match(/^[^\s@]+@(\w+\.\w+)+$/) &&
                     message &&
