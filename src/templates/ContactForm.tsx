@@ -29,7 +29,7 @@ const ContactForm = () => {
               Contact Us
             </h1>
             <p>Feedback or questions? We&apos;d love to hear from you.</p>
-            <input type="hidden" name="form-name" value="early-access" />
+            <input type="hidden" name="form-name" value="sonatino-contact" />
             <span className="invisible">
               <input type="text" name="subject" />
             </span>
