@@ -11,13 +11,4 @@ module.exports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
-  redirects() {
-    return [
-      {
-        source: '/qr/a8',
-        destination: '/docs',
-        permanent: false,
-      },
-    ];
-  },
 });

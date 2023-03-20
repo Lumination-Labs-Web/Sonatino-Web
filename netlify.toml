@@ -4,3 +4,9 @@
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[[redirects]]
+  from = "/qr/a8"
+  to = "/docs"
+  status = 302
+  force = false
