@@ -234,7 +234,7 @@ const DocsContent = () => {
             <List
               items={[
                 'Use a small screwdriver or paperclip to carefully adjust the level selection DIP switches as needed.',
-                'The speaker volume and mic gain controls are adjustable with a small phillips head screwdriver. Do not turn with excessive force; the trimpots are fragile and only have 250° of rotation from minimum to maximum.',
+                'The speaker volume and mic gain controls are adjustable with a small phillips or flat head screwdriver. Do not turn with excessive force; the trimpots are fragile and only have 250° of rotation from minimum to maximum.',
               ]}
             />
           </div>
