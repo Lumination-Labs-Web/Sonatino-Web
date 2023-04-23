@@ -355,6 +355,7 @@ const DocsContent = () => {
                 <List
                   items={[
                     'Turn off wireless functions on the ESP32-S3 when not in use.',
+                    'Configure the ESP32-S3 to use a lower CPU frequency or dynamic frequency scaling (DFS).',
                     'Set GPIO 46 to LOW: this shuts down the 2.5W amp, headphone amp, and microphone preamp.',
                     'Set GPIO 14 to LOW to mute the DAC.',
                     <span key="mclk">
