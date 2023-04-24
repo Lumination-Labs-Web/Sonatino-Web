@@ -595,6 +595,16 @@ const DocsContent = () => {
           </p>
           <p>
             <a
+              href="https://github.com/pschatzmann/arduino-audio-tools"
+              target="_blank"
+              rel="noreferrer"
+            >
+              pschatzmann/arduino-audio-tools
+            </a>{' '}
+            &mdash; Arduino Audio Tools
+          </p>
+          <p>
+            <a
               href="https://github.com/marcel-licence/esp32_basic_synth"
               target="_blank"
               rel="noreferrer"
