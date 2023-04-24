@@ -565,6 +565,16 @@ const DocsContent = () => {
           </p>
           <p>
             <a
+              href="https://github.com/espressif/esp-adf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ESP-ADF
+            </a>{' '}
+            &mdash; Espressif Audio Development Framework
+          </p>
+          <p>
+            <a
               href="https://www.espressif.com/en/solutions/audio-solutions/esp-skainet/overview"
               target="_blank"
               rel="noreferrer"
