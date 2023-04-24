@@ -376,6 +376,7 @@ const DocsContent = () => {
                       </span>{' '}
                       before sleeping to keep the pin held low.
                     </span>,
+                    "Remove any microSD card if you aren't using it.",
                     'You can disable the green power LED by carefully cutting the trace between the two jumper pads of JP1 on the underside of the board.',
                   ]}
                 />
