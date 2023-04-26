@@ -26,9 +26,9 @@ const ContactForm = () => {
         >
           <div className="w-full sm:w-1/2 p-4 ml-auto mr-auto">
             <h1 className="text-2xl font-bold text-center mb-2 text-gray-700">
-              Contact Us
+              Contact
             </h1>
-            <p>Feedback or questions? We&apos;d love to hear from you.</p>
+            <p>Feedback or questions? I&apos;d love to hear from you.</p>
             <input type="hidden" name="form-name" value="sonatino-contact" />
             <span className="invisible">
               <input type="text" name="subject" />
