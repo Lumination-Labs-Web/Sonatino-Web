@@ -415,7 +415,19 @@ const DocsContent = () => {
                 offer some additional benefits for more advanced projects.
               </span>,
               "When uploading code, Arduino IDE will usually take care of putting the board into flashing mode and then resetting the board when the upload is complete. If that doesn't work, check that the correct port and board is selected, then try again. Some development tools don't handle the flashing process correctly by default, so you may need to adjust your software's board settings.",
-              'In rare cases, you may need to manually put the board into flashing mode by temporarily shorting (e.g., with a short length of wire) the "MCLK/0" pad on the underside of the board with GND. While doing that, press and release the reset button ("RST") on the front and remove the wire.',
+              <span key="resetting">
+                In rare cases, you may need to manually put the board into
+                flashing mode. This can be done two different ways, depending on
+                your board revision (found on the underside of the board, near
+                the right-hand edge &mdash; looks like &quot;rev x.x.x&quot;):
+                <br />
+                <List
+                  items={[
+                    'Rev 2.6.1 and above: Hold down the "BOOT" button, and while holding it down press and release the "RST" button. Then release the "BOOT" button.',
+                    'Rev 2.5.8: Temporarily short (e.g., with a short length of wire) the "MCLK/0" pad on the underside of the board with GND. While doing that, press and release the reset button ("RST") on the front and remove the wire.',
+                  ]}
+                />
+              </span>,
             ]}
           />
           <h3 className="text-xl font-bold">Audio</h3>

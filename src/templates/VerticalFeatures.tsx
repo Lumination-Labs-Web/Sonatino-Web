@@ -52,7 +52,7 @@ const VerticalFeatures = () => {
       />
       <VerticalFeatureRow
         title="Abundant Storage Options"
-        description="Need a place to store digital audio files or other project data? No problem! Sonatino's microcontroller includes 16 MB of flash memory, 2 MB of PSRAM (useful for code that needs more working memory), as well as a microSD card slot for additional storage."
+        description="Need a place to store digital audio files or other project data? No problem! Sonatino's microcontroller includes 16 MB of flash memory, 8 MB of PSRAM (useful for code that needs more working memory), as well as a microSD card slot for additional storage."
         image="/assets/images/microsd_flash.svg"
         imageAlt="Flash and microSD Storage"
         reverse
@@ -69,7 +69,7 @@ const VerticalFeatures = () => {
           <List
             title="Microcontroller & Storage"
             items={[
-              'Microcontroller: ESP32-S3-WROOM-1 with 16 MB flash and 2MB PSRAM',
+              'Microcontroller: ESP32-S3-WROOM-1 with 16 MB flash and 8 MB PSRAM (previously 2 MB PSRAM)',
               'Additional Storage: microSD card slot with SPI interface',
             ]}
           />

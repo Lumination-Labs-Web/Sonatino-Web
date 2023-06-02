@@ -10,3 +10,9 @@
   to = "/docs"
   status = 302
   force = false
+
+[[redirects]]
+  from = "/qr/a9"
+  to = "/docs"
+  status = 302
+  force = false
