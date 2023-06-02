@@ -1,7 +1,5 @@
 import { ReactNode } from 'react';
 
-import Link from 'next/link';
-
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
@@ -17,6 +15,9 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
 
     {props.button}
     <div className="text-xl mt-2 text-red-700 font-bold">
+      Limited supply available now. More on the way.
+    </div>
+    {/* <div className="text-xl mt-2 text-red-700 font-bold">
       Currently out of stock
     </div>
     <div className="text-gray-700">
@@ -25,7 +26,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
         <a className="font-bold text-blue-800">contact form</a>
       </Link>{' '}
       to request notification when in stock.
-    </div>
+    </div> */}
   </header>
 );
 
