@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import Link from 'next/link';
+
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
@@ -14,11 +16,11 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
 
     {props.button}
-    <div className="text-xl mt-2 text-red-700 font-bold">
-      Limited supply available now. More on the way.
-    </div>
     {/* <div className="text-xl mt-2 text-red-700 font-bold">
-      Currently out of stock
+      Limited supply available now. More on the way.
+    </div> */}
+    <div className="text-xl mt-2 text-red-700 font-bold">
+      Currently out of stock (June 3, 2023)
     </div>
     <div className="text-gray-700">
       Use the{' '}
@@ -26,7 +28,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
         <a className="font-bold text-blue-800">contact form</a>
       </Link>{' '}
       to request notification when in stock.
-    </div> */}
+    </div>
   </header>
 );
 
