@@ -5,6 +5,10 @@
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
+# a8 = 2.5.8
+# a9 = 2.6.1
+# a10 = 2.7.0
+
 [[redirects]]
   from = "/qr/a8"
   to = "/docs"
@@ -13,6 +17,12 @@
 
 [[redirects]]
   from = "/qr/a9"
+  to = "/docs"
+  status = 302
+  force = false
+
+[[redirects]]
+  from = "/qr/a10"
   to = "/docs"
   status = 302
   force = false

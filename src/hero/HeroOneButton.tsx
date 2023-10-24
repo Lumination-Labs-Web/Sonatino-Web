@@ -20,7 +20,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       Limited supply available now. More on the way.
     </div> */}
     <div className="text-xl mt-2 text-red-700 font-bold">
-      Currently out of stock (June 3, 2023)
+      Currently out of stock. New revision coming soon.
     </div>
     <div className="text-gray-700">
       Use the{' '}
