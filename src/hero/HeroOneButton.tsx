@@ -20,7 +20,15 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       Limited supply available now. More on the way.
     </div> */}
     <div className="text-xl mt-2 text-red-700 font-bold">
-      Currently out of stock. New revision coming soon.
+      Currently out of stock. New revision coming.
+    </div>
+    <div className="text-xl mt-2 text-gray-700 max-w-screen-sm ml-auto mr-auto">
+      <b>Update - December 1, 2023</b>: After an unexpected delay, the new
+      revision is in final testing and will be in production within a week or
+      two. Very excited for the improvements and to make this available again!
+      There will also be an alternative Sonatino variation with additional
+      features that many people have been requesting.
+      <br />I appreciate your patience!
     </div>
     <div className="text-gray-700">
       Use the{' '}
