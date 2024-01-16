@@ -23,9 +23,11 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       Currently out of stock. New revision coming.
     </div>
     <div className="text-xl mt-2 text-gray-700 max-w-screen-sm ml-auto mr-auto">
-      <b>Update - December 12, 2023</b>: The new revision is in final testing
-      and will be in production soon. Very excited for the improvements and to
-      make this available again! I appreciate your patience.
+      <b>Update - January 16, 2024</b>: Additional testing showed that the board
+      would benefit from improved power circuitry (for battery and direct
+      power). I&apos;m currently testing these changes and am very excited to
+      make this available again soon! I appreciate your patience. It will be
+      worth the wait!
     </div>
     <div className="text-gray-700">
       Use the{' '}
