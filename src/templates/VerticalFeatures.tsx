@@ -33,20 +33,21 @@ const VerticalFeatures = () => {
     >
       <VerticalFeatureRow
         title="Dedicated DAC and ADC"
-        description="High-performance digital-to-analog and analog-to-digital chips deliver 24-bit, 192kHz audio through the built-in 3.5mm audio jack. Simultaneous input/output is possible using a TRRS adapter or headset. The integrated amplifer is capable of driving headphones, and input can be received at line or microphone levels using a built-in microphone preamp."
+        description="High-performance digital-to-analog and analog-to-digital chips deliver up to 24-bit, 192kHz audio through the built-in 3.5mm audio jack. Simultaneous input/output is possible using a TRRS adapter or headset. The integrated amplifer is capable of driving headphones, and input can be received at line or microphone levels using a built-in microphone preamp."
         image="/assets/images/dac_adc.svg"
         imageAlt="DAC and ADC"
       />
       <VerticalFeatureRow
         title="Built-In Amplifier"
-        description="Sonatino features a built-in class D mono amplifier capable of driving a small 4Ω speaker at 2.5W, making it incredibly easy to add audio output to your project with minimal external components."
+        description="Sonatino features a built-in class D mono amplifier capable of driving a small 4Ω speaker at 3.2W, making it incredibly easy to add audio output to your project with minimal external components."
         image="/assets/images/speaker.svg"
         imageAlt="Speaker"
         reverse
       />
       <VerticalFeatureRow
         title="Wireless and Wired Connectivity"
-        description="Interact with your project wirelessly from nearby devices, or over the internet. Sonatino has built-in WiFi and Bluetooth 5 (LE) connectivity, USB-C, and 13 general-purpose I/O (GPIO) pins for connecting additional peripherals. And of course, connect audio devices using the built-in 3.5mm audio jack."
+        description="Interact with your project wirelessly from nearby devices, or over the internet. Sonatino has built-in WiFi and Bluetooth 5 (LE)* connectivity, USB-C, and 13 general-purpose I/O (GPIO) pins for connecting additional peripherals. And of course, connect audio devices using the built-in 3.5mm audio jack."
+        footnote="* Bluetooth audio is not supported."
         image="/assets/images/connectivity.svg"
         imageAlt="WiFi and Wired Connectivity"
       />
@@ -59,7 +60,7 @@ const VerticalFeatures = () => {
       />
       <VerticalFeatureRow
         title="Battery-Powered Flexibility"
-        description="Sonatino can be powered via USB-C, a 5 volt DC power supply, or a 3.7 volt LiPo/Li-ion battery. The built-in battery charger enables USB-C charging of a connected battery while operating the board, and Sonatino helps protect your battery from overcharging and over-discharging. The microcontroller and audio components can even be put into low-power mode for extended battery life."
+        description="Sonatino can be powered via USB-C, a 5 volt DC power supply, or a 3.7 volt LiPo/Li-ion battery. The built-in battery charger enables charging of a connected battery while operating the board, and Sonatino helps protect your battery from overcharging and over-discharging. The microcontroller and audio components can even be put into low-power mode for extended battery life."
         image="/assets/images/battery.svg"
         imageAlt="Battery"
       />
@@ -69,7 +70,7 @@ const VerticalFeatures = () => {
           <List
             title="Microcontroller & Storage"
             items={[
-              'Microcontroller: ESP32-S3-WROOM-1 with 16 MB flash and 8 MB PSRAM (previously 2 MB PSRAM)',
+              'Microcontroller: ESP32-S3-WROOM-1 with 16 MB flash and 8 MB PSRAM',
               'Additional Storage: microSD card slot with SPI interface',
             ]}
           />
@@ -88,8 +89,7 @@ const VerticalFeatures = () => {
                 Audio format: I<sup>2</sup>S
               </span>,
               <span key="amp">
-                Speaker Amp: PAM8302 &mdash; 2.5W @ 4&#8486; (mono) with
-                adjustable volume
+                Speaker Amp: MAX98357A &mdash; 3.2W @ 4&#8486; (mono)
               </span>,
               'Interface: 3.5mm audio jack supporting input and output (TRRS, CTIA standard)',
               'Stereo Headphone Amp: TPA6132A2',
@@ -120,10 +120,11 @@ const VerticalFeatures = () => {
           <List
             title="Status and Control"
             items={[
-              'Trim pots for adjusting speaker volume and mic gain',
+              'Trim pot for adjusting mic gain',
               'Dip switches for selecting mic/line level and line/headphone level',
-              'Reset button',
-              'User-programmable blue status LED',
+              'Exposed pin for adjusting speaker gain',
+              'Reset and boot buttons',
+              'User-programmable RGB status LED (WS2812B)',
               'Power and battery charging status LEDs',
             ]}
           />

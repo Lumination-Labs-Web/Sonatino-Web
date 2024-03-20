@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import Link from 'next/link';
+import { List } from '../templates/List';
 
 type IHeroOneButtonProps = {
   title: ReactNode;
@@ -16,25 +16,29 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
 
     {props.button}
-    {/* <div className="text-xl mt-2 text-red-700 font-bold">
-      Limited supply available now. More on the way.
-    </div> */}
     <div className="text-xl mt-2 text-red-700 font-bold">
-      Currently out of stock. New revision coming.
+      Limited supply available now. More on the way.
     </div>
     <div className="text-xl mt-2 text-gray-700 max-w-screen-sm ml-auto mr-auto">
-      <b>Update - January 16, 2024</b>: Additional testing showed that the board
-      would benefit from improved power circuitry (for battery and direct
-      power). I&apos;m currently testing these changes and am very excited to
-      make this available again soon! I appreciate your patience. It will be
-      worth the wait!
+      <b>Revision 3.1.3 has been released!</b>
     </div>
-    <div className="text-gray-700">
-      Use the{' '}
-      <Link href="/contact">
-        <a className="font-bold text-blue-800">contact form</a>
-      </Link>{' '}
-      to request notification when in stock.
+    <div className="text-sm mt-4 max-w-screen-sm ml-auto mr-auto inline-block">
+      <List
+        titleClassName="text-left ml-4"
+        listClassName="inline-block text-left"
+        title="Changes in the latest revision include:"
+        items={[
+          'Improved speaker output (3.2W amp)',
+          'More robust audio jack',
+          'Programmable RGB LED',
+          'Improved protection in power circuitry',
+          'External antenna for more flexibility',
+          'Improved noise performance',
+          'Power off pin (for charging while off)',
+          'Battery charging from VIN (in addition to USB-C)',
+          'Optional battery monitoring',
+        ]}
+      />
     </div>
   </header>
 );
