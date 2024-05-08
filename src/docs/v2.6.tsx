@@ -18,7 +18,7 @@ const DocsContent = () => {
             Documentation
           </h1>
           <h2 className="text-center text-2xl text-gray-400">
-            Board Revisions: 2.5.8 &mdash; 2.6.1
+            Board Revisions: 2.5.x &mdash; 2.6.x
           </h2>
           <p className="text-center text-gray-400 mb-4">
             (boards shipped in 2023)
@@ -162,7 +162,7 @@ const DocsContent = () => {
           <h3 className="p-4 text-center text-2xl -mb-6">MAIN COMPONENTS</h3>
           <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
             <img
-              src={`${router.basePath}/assets/images/v2.6.1/components.png`}
+              src={`${router.basePath}/assets/images/v2.6/components.png`}
               alt="Board Components"
             />
           </div>
@@ -172,7 +172,7 @@ const DocsContent = () => {
           </h3>
           <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
             <img
-              src={`${router.basePath}/assets/images/v2.6.1/controls.png`}
+              src={`${router.basePath}/assets/images/v2.6/controls.png`}
               alt="Board Controls"
             />
           </div>
@@ -181,7 +181,7 @@ const DocsContent = () => {
           </h3>
           <div className="w-1/2 sm:w-1/4 p-6 ml-auto mr-auto -mb-6">
             <img
-              src={`${router.basePath}/assets/images/v2.6.1/extras.png`}
+              src={`${router.basePath}/assets/images/v2.6/extras.png`}
               alt="Extra Components"
             />
           </div>
@@ -238,7 +238,7 @@ const DocsContent = () => {
           <div className="w-full sm:w-1/2 p-6 ml-auto mr-auto bg-white rounded-lg shadow">
             <div className="w-full ml-auto mr-auto">
               <img
-                src={`${router.basePath}/assets/images/v2.6.1/levels.png`}
+                src={`${router.basePath}/assets/images/v2.6/levels.png`}
                 alt="Level Adjustment Controls"
               />
             </div>
@@ -255,12 +255,12 @@ const DocsContent = () => {
       <Section yPadding="py-8 px-8" title="Pinout" titleNoMargin id="pins">
         <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
           <a
-            href={`${router.basePath}/assets/images/v2.6.1/pins.png`}
+            href={`${router.basePath}/assets/images/v2.6/pins.png`}
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src={`${router.basePath}/assets/images/v2.6.1/pins.png`}
+              src={`${router.basePath}/assets/images/v2.6/pins.png`}
               alt="Sonatino Pins"
             />
           </a>
@@ -435,7 +435,7 @@ const DocsContent = () => {
                 <List
                   items={[
                     'Rev 2.6.1 and above: Hold down the "BOOT" button, and while holding it down press and release the "RST" button. Then release the "BOOT" button.',
-                    'Rev 2.5.8: Temporarily short (e.g., with a short length of wire) the "MCLK/0" pad on the underside of the board with GND. While doing that, press and release the reset button ("RST") on the front and remove the wire.',
+                    'Rev 2.5.x: Temporarily short (e.g., with a short length of wire) the "MCLK/0" pad on the underside of the board with GND. While doing that, press and release the reset button ("RST") on the front and remove the wire.',
                   ]}
                 />
               </span>,
@@ -719,7 +719,7 @@ const DocsContent = () => {
           </h3>
           <p>
             <Link href="/contact">
-              <a className="text-lg font-semibold">We want to hear about it!</a>
+              <a className="text-lg font-semibold">Share your experience!</a>
             </Link>
           </p>
         </div>

@@ -18,7 +18,7 @@ const DocsContent = () => {
             Documentation
           </h1>
           <h2 className="text-center text-2xl text-gray-400">
-            Board Revision: 3.1.3 (Latest)
+            Board Revision: 3.1.x (Latest)
           </h2>
           <p className="text-center text-gray-400 mb-4">
             (boards shipped in 2024)
@@ -140,10 +140,27 @@ const DocsContent = () => {
             </span>,
           ]}
         />
+        <p className="pt-4 pb-2">
+          Congratulations! If everything went well, you should see the RGB LED
+          begin to flash on the board, and if you plug in a pair of headphones
+          you should hear music playing. Go ahead and try any of the other
+          example sketches or start writing your own code to do something
+          amazing!
+        </p>
         <p className="pt-4 pb-10">
-          If everything went well, you should see the RGB LED begin to flash on
-          the board, and if you plug in a pair of headphones you should hear
-          music playing.
+          Antenna Note: The &quot;audio-playback-example&quot; sketch does not
+          use any wireless features, so the antenna can be left disconnected. If
+          you want to use WiFi or BLE in another sketch, don&apos;t forget to
+          carefully connect the external antenna to the{' '}
+          <a href="#pins">U.FL connector</a> on the board. Follow{' '}
+          <a
+            href="https://www.digikey.com/en/maker/projects/three-quick-tips-about-using-u.fl/f1c192acf52d4aedacdb7a73b1258f87"
+            target="_blank"
+            rel="noreferrer"
+          >
+            these tips
+          </a>{' '}
+          for properly connecting and disconnecting the antenna.
         </p>
       </Section>
 
@@ -157,7 +174,7 @@ const DocsContent = () => {
           <h3 className="p-4 text-center text-2xl -mb-6">MAIN COMPONENTS</h3>
           <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
             <img
-              src={`${router.basePath}/assets/images/v3.1.3/components.png`}
+              src={`${router.basePath}/assets/images/v3.1/components.png`}
               alt="Board Components"
             />
           </div>
@@ -167,8 +184,22 @@ const DocsContent = () => {
           </h3>
           <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
             <img
-              src={`${router.basePath}/assets/images/v3.1.3/controls.png`}
+              src={`${router.basePath}/assets/images/v3.1/controls.png`}
               alt="Board Controls"
+            />
+          </div>
+          <h3 className="p-4 text-center text-2xl -mb-6">ANTENNA</h3>
+          <div className="w-3/4 sm:w-2/4 p-6 ml-auto mr-auto -mb-6">
+            <img
+              src={`${router.basePath}/assets/images/v3.1/antenna.png`}
+              alt="Antenna"
+            />
+          </div>
+          <h3 className="p-4 text-center text-2xl -mb-6">ANTENNA CONNECTION</h3>
+          <div className="w-1/2 sm:w-2/5 p-6 ml-auto mr-auto">
+            <img
+              src={`${router.basePath}/assets/images/v3.1/antenna-placement.png`}
+              alt="Antenna Placement"
             />
           </div>
           <h3 className="p-4 text-center text-2xl -mb-6">
@@ -176,7 +207,7 @@ const DocsContent = () => {
           </h3>
           <div className="w-1/2 sm:w-1/4 p-6 ml-auto mr-auto -mb-6">
             <img
-              src={`${router.basePath}/assets/images/v3.1.3/extras.png`}
+              src={`${router.basePath}/assets/images/v3.1/extras.png`}
               alt="Extra Components"
             />
           </div>
@@ -233,7 +264,7 @@ const DocsContent = () => {
           <div className="w-full sm:w-1/2 p-6 ml-auto mr-auto bg-white rounded-lg shadow">
             <div className="w-full ml-auto mr-auto">
               <img
-                src={`${router.basePath}/assets/images/v3.1.3/levels.png`}
+                src={`${router.basePath}/assets/images/v3.1/levels.png`}
                 alt="Level Adjustment Controls"
               />
             </div>
@@ -262,12 +293,12 @@ const DocsContent = () => {
       <Section yPadding="py-8 px-8" title="Pinout" titleNoMargin id="pins">
         <div className="w-full sm:w-3/4 p-6 ml-auto mr-auto">
           <a
-            href={`${router.basePath}/assets/images/v3.1.3/pins-white.png`}
+            href={`${router.basePath}/assets/images/v3.1/pins-white.png`}
             target="_blank"
             rel="noreferrer"
           >
             <img
-              src={`${router.basePath}/assets/images/v3.1.3/pins.png`}
+              src={`${router.basePath}/assets/images/v3.1/pins.png`}
               alt="Sonatino Pins"
             />
           </a>
@@ -328,21 +359,21 @@ const DocsContent = () => {
             ['GPIO 43', 'microSD (SPI)', 'CMD / SI / MOSI'],
             ['GPIO 44', 'microSD (SPI)', 'D0 / SO / MISO'],
             ['GPIO 45', 'RGB LED', 'Programmable RGB LED (WS2812B)'],
-            ['GPIO 46', 'All Amps', 'Amp Shutdown (Active LOW)'],
             [
-              'GPIO 47',
-              'Headphone Amp',
-              <span key="sample_rate">
-                Gain 0 (<a href="#hp_gain">note</a>)
-              </span>,
-            ],
-            [
-              'GPIO 48',
+              'GPIO 46',
               'Headphone Amp',
               <span key="sample_rate">
                 Gain 1 (<a href="#hp_gain">note</a>)
               </span>,
             ],
+            [
+              'GPIO 47',
+              'Headphone Amp',
+              <span key="hp_gain">
+                Gain 0 (<a href="#hp_gain">note</a>)
+              </span>,
+            ],
+            ['GPIO 48', 'All Amps', 'Amp Shutdown (Active LOW)'],
             [
               'GAIN',
               'Speaker Amp',
@@ -411,13 +442,28 @@ const DocsContent = () => {
           <List
             items={[
               'The charging circuit is configured to deliver up to 500mA of current to a rechargeable lithium battery. Please check that your battery can handle this charging rate, especially for batteries with less than 500mAh of capacity.',
-              'When connecting a battery for the first time, you may need to briefly short the negative (-) battery pin to ground (GND) to enable operation. This is a known behavior of the battery protection chip.',
-              'Battery voltage can be monitored using GPIO10. To enable this feature, add a solder bridge between the two pads labeled "JP2" on the bottom of the board (after doing that, GPIO10 can only be used for battery monitoring). With JP2 bridged, GPIO10 is connected to the battery through a voltage divider (a 470kΩ resistor to the battery and a 100kΩ resistor to ground). Testing should be done in order to correlate the ADC readings on GPIO10 to the actual battery voltage. For best accuracy, take the average of multiple readings.',
+              'When connecting a battery for the first time, you may need to briefly short the negative (-) battery pin to ground (GND) to enable operation. This is a known behavior of the battery protection chip. The battery charge status LED may also remain illuminated when no battery is connected; this is normal and does not indicate a problem with the board.',
+              <span key="battery_voltage">
+                Battery voltage can be monitored using GPIO 10. To enable this
+                feature, solder the jumper pad labeled &quot;JP2&quot; on the
+                bottom of the board (after doing that, GPIO 10 can only be used
+                for battery monitoring). With JP2 bridged, GPIO 10 is connected
+                to the battery through a voltage divider (a 150kΩ resistor to
+                the battery and a 470kΩ resistor to ground). Using 12-bit ADC
+                values from GPIO 10 (values 0-4095), battery voltage can be
+                estimated using this formula:
+                <br />
+                <span className="font-mono">
+                  V<sub>bat</sub> = ADC_READING &#247; 941
+                </span>
+                <br />
+                For best accuracy, use the average from multiple readings.
+              </span>,
               <span key="pwr_off" id="pwr_off">
                 The PWR OFF pin (near the USB-C connector) can be used to shut
                 down the board while still allowing the battery to charge. To
-                shut down the board, simply connect the PWR OFF pin to ground
-                (GND). This can be done with an SPST switch.
+                shut down the board, connect the PWR OFF pin to ground (GND)
+                using a jumper wire or a switch.
               </span>,
               <span key="battery">
                 A few ways to reduce power consumption and extend battery life:
@@ -426,7 +472,7 @@ const DocsContent = () => {
                   items={[
                     'Turn off wireless functions on the ESP32-S3 when not in use.',
                     'Configure the ESP32-S3 to use a lower CPU frequency or dynamic frequency scaling (DFS).',
-                    'Set GPIO 46 to LOW: this shuts down the speaker amp, headphone amp, and microphone preamp.',
+                    'Set GPIO 48 to LOW: this shuts down the speaker amp, headphone amp, and microphone preamp.',
                     'Set GPIO 14 to LOW to mute the DAC.',
                     <span key="mclk">
                       Stop outputting a MCLK signal on the ESP32-S3&apos;s GPIO
@@ -439,7 +485,7 @@ const DocsContent = () => {
                       <span className="font-mono">esp_light_sleep_start()</span>{' '}
                       or{' '}
                       <span className="font-mono">esp_deep_sleep_start()</span>
-                      ). If you&apos;ve shut down the amps by setting GPIO 46 to
+                      ). If you&apos;ve shut down the amps by setting GPIO 48 to
                       LOW, don&apos;t forget to call{' '}
                       <span className="font-mono">
                         gpio_deep_sleep_hold_en()
@@ -501,9 +547,10 @@ const DocsContent = () => {
               </span>,
               <span key="amp_dac">
                 The 3.2W speaker amp has its own independent DAC and shares the
-                same I<sup>2</sup>S lines as the main DAC. The speaker amp&amp;s
-                DAC can operate up to 96kHz, so only the main DAC (via the 3.5mm
-                jack) will work for higher sample rates (up to 192kHz).
+                same I<sup>2</sup>S lines as the main DAC. The speaker
+                amp&apos;s DAC can operate up to 96kHz, so only the main DAC
+                (via the 3.5mm jack) will work for higher sample rates (up to
+                192kHz).
               </span>,
               <span key="adc_pins" id="adc_pins">
                 GPIO 18 and GPIO 21 are connected to FSAMPEN and IWL pins of the
@@ -519,7 +566,7 @@ const DocsContent = () => {
                 for more information.
               </span>,
               <span key="hp_gain" id="hp_gain">
-                GPIO 47 and GPIO 48 are connected to GAIN0 and GAIN1 of the
+                GPIO 46 and GPIO 47 are connected to GAIN1 and GAIN0 of the
                 TPA6132A2 (Headphone Amp), respectively. The default state
                 corresponds to 0 dB gain (GAIN0 is pulled HIGH and GAIN1 is
                 pulled LOW), but can be set to -6 dB, 0dB, 3dB, or 6 dB based on
@@ -535,21 +582,21 @@ const DocsContent = () => {
               </span>,
               <span key="ch_sel" id="ch_sel">
                 The SD pin (next to the speaker output) is connected with a
-                680kΩ resistor to GPIO 46 (amp shutdown), which in turn is
+                680kΩ resistor to GPIO 48 (amp shutdown), which in turn is
                 normally pulled HIGH (to 3.3V) by a 10kΩ resistor. By default,
                 this means the speaker amp is enabled and in{' '}
                 <span className="font-mono">left/2 + right/2</span> mode (it
-                outputs an average of both stereo channels). When GPIO 46 is set
+                outputs an average of both stereo channels). When GPIO 48 is set
                 to LOW (in software), this amp &mdash; along with the other amps
                 &mdash; will be shut down. If you wish to ouput only the right
                 channel, pull up the SD pin to 3.3V through a 330kΩ resistor.
-                For the left channel, connect it directly to 3.3V.
+                For the left channel only, connect it directly to 3.3V.
               </span>,
               <span key="amp_gain" id="amp_gain">
                 The GAIN pin (next to the speaker output) is normally
-                unconnected, corresponding to 9 dB of gain. Different amounts of
-                gain can be selected by connecting the GAIN pin as described in
-                the{' '}
+                unconnected, corresponding to 9 dB of gain. Different levels of
+                speaker gain can be selected by connecting the GAIN pin as
+                described in the{' '}
                 <a
                   href="/assets/datasheets/max98357a-max98357b.pdf"
                   target="_blank"
@@ -560,13 +607,27 @@ const DocsContent = () => {
                 .
               </span>,
               'Without properly setting volume/gain (in software and hardware), audio output from Sonatino can be very loud! It can also become distorted if the volume is set too high. Please protect your ears and be careful when testing audio output!',
+              <span key="noise">
+                Noise in the audio can be caused by a number of factors
+                including noisy power supplies, antennas that are too close,
+                interference from other devices, and ground loops. If you
+                encounter noise, try to isolate the source of the problem by
+                testing different configurations and settings. USB-C power from
+                a computer can often introduce noise, so try using a different
+                power source if you suspect this is the issue. If noise is only
+                present during wireless communication, try moving the antenna,
+                using a different antenna (or adding shielding between the
+                antenna and board), or lowering the transmit power (
+                <span className="font-mono">esp_wifi_set_max_tx_power()</span>{' '}
+                or <span className="font-mono">esp_ble_tx_power_set()</span>).
+              </span>,
               'Crackling, stuttering, or choppy audio is most often caused by misconfigured settings (sample rate, word length, master clock, DMA buffer, etc.) or by delays in the audio processing pipeline. Double-check that all your settings are correct and that no time-consuming tasks are blocking the delivery of audio samples. You may need to use RTOS programming to take advantage of both cores of the ESP32-S3.',
             ]}
           />
           <h3 className="text-xl font-bold">Cases / Enclosures</h3>
           <List
             items={[
-              "Sonatino will fit into some cases designed for the Raspberry Pi Zero, but not all. Cases that are open around the edges of the board generally work without modification, but those with cutouts for ports on the Raspberry Pi Zero (including the official case sold by Raspberry Pi) won't match the ports on Sonatino. Often, those cases can be modified by expanding or cutting out new holes for Sonatino's ports.",
+              "Sonatino will fit into some cases designed for the Raspberry Pi Zero, but not all. Cases that are open around the edges of the board generally work without modification, but those with cutouts for ports on the Raspberry Pi Zero (including the official case sold by Raspberry Pi) won't match the ports on Sonatino. Those cases can sometimes be modified by expanding or cutting out new holes for Sonatino's ports.",
             ]}
           />
         </Section>
@@ -733,9 +794,7 @@ const DocsContent = () => {
             </h3>
             <p>
               <Link href="/contact">
-                <a className="text-lg font-semibold">
-                  We want to hear about it!
-                </a>
+                <a className="text-lg font-semibold">Share your experience!</a>
               </Link>
             </p>
           </div>

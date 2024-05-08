@@ -20,7 +20,7 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
       Limited supply available now. More on the way.
     </div>
     <div className="text-xl mt-2 text-gray-700 max-w-screen-sm ml-auto mr-auto">
-      <b>Revision 3.1.3 has been released!</b>
+      <b>New: Board revision 3.1 is here!</b>
     </div>
     <div className="text-sm mt-4 max-w-screen-sm ml-auto mr-auto inline-block">
       <List
@@ -28,11 +28,11 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
         listClassName="inline-block text-left"
         title="Changes in the latest revision include:"
         items={[
-          'Improved speaker output (3.2W amp)',
+          'External antenna (included with board)',
+          'Improved speaker output (3.2W amplifier)',
           'More robust audio jack',
           'Programmable RGB LED',
           'Improved protection in power circuitry',
-          'External antenna for more flexibility',
           'Improved noise performance',
           'Power off pin (for charging while off)',
           'Battery charging from VIN (in addition to USB-C)',

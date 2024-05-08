@@ -1,4 +1,4 @@
-import { DocsContent } from '../../docs/v3.1.3';
+import { DocsContent } from '../../docs/v3.1';
 import { Docs } from '../../templates/Docs';
 
 const Page = () => (

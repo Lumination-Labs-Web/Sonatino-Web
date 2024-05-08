@@ -28,7 +28,7 @@ export const Docs = ({
       <Section yPadding="py-2 px-8">
         <p className="text-white text-sm text-center">
           {latest ? (
-            <Link href="/docs/v2.6.1">
+            <Link href="/docs/v2.6">
               <a>Click here for earlier boards</a>
             </Link>
           ) : (
