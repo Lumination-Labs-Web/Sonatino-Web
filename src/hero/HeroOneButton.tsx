@@ -1,7 +1,5 @@
 import { ReactNode } from 'react';
 
-import { List } from '../templates/List';
-
 type IHeroOneButtonProps = {
   title: ReactNode;
   description: string;
@@ -16,30 +14,6 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
 
     {props.button}
-    <div className="text-xl mt-2 text-red-700 font-bold">
-      Limited supply available now. More on the way.
-    </div>
-    <div className="text-xl mt-2 text-gray-700 max-w-screen-sm ml-auto mr-auto">
-      <b>New: Board revision 3.1 is here!</b>
-    </div>
-    <div className="text-sm mt-4 max-w-screen-sm ml-auto mr-auto inline-block">
-      <List
-        titleClassName="text-left ml-4"
-        listClassName="inline-block text-left"
-        title="Changes in the latest revision include:"
-        items={[
-          'External antenna (included with board)',
-          'Improved speaker output (3.2W amplifier)',
-          'More robust audio jack',
-          'Programmable RGB LED',
-          'Improved protection in power circuitry',
-          'Improved noise performance',
-          'Power off pin (for charging while off)',
-          'Battery charging from VIN (in addition to USB-C)',
-          'Optional battery monitoring',
-        ]}
-      />
-    </div>
   </header>
 );
 
