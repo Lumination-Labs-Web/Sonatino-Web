@@ -101,6 +101,14 @@ const DocsContent = () => {
               &quot;esp32&quot;, and install &quot;
               <span className="font-bold">esp32 by Espressif Systems</span>
               &quot;.
+              <br />
+              <span className="font-bold text-red-900">
+                Note: For compatibility with other libraries (including
+                ESP8266Audio), it&apos;s recommend that you use version 2.x.x of
+                the esp32 board package. Version 3 of the esp32 package is
+                gaining support, but as of now, some libraries may not work with
+                it as expected.
+              </span>
             </span>,
             <span key="esp8266audio">
               Install the <span className="font-bold">ESP8266Audio</span>{' '}

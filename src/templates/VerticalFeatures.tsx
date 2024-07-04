@@ -60,7 +60,7 @@ const VerticalFeatures = () => {
       />
       <VerticalFeatureRow
         title="Battery-Powered Flexibility"
-        description="Sonatino can be powered via USB-C, a 5 volt DC power supply, or a 3.7 volt LiPo/Li-ion battery. The built-in battery charger enables charging of a connected battery while operating the board, and Sonatino helps protect your battery from overcharging and over-discharging. The microcontroller and audio components can even be put into low-power mode for extended battery life."
+        description="Sonatino can be powered via USB-C, a 5 volt DC power supply, or a 3.7 volt LiPo/Li-ion battery. The built-in battery charger enables charging a connected battery while operating the board, and Sonatino helps protect your battery from overcharging and over-discharging. The microcontroller and audio components can even be put into low-power mode for extended battery life."
         image="/assets/images/battery.svg"
         imageAlt="Battery"
       />
