@@ -418,6 +418,16 @@ const DocsContent = () => {
             ],
           ]}
         />
+        <h3 className="p-4 text-center text-2xl -mb-6" id="jack_pins">
+          AUDIO JACK PINS
+        </h3>
+        <div className="w-full sm:w-1/2 p-6 ml-auto mr-auto">
+          <img src="/assets/images/v3.1/jack-pins.png" alt="Jack Pins" />
+        </div>
+        <div className="w-full sm:w-1/2 p-6 ml-auto mr-auto">
+          To bypass the 3.5mm audio jack, you can solder wires directly to these
+          pins below the jack.
+        </div>
       </Section>
       <Background color="bg-gray-200">
         <Section
