@@ -408,7 +408,7 @@ const DocsContent = () => {
                 <br />
                 Ring 2: Ground
                 <br />
-                Sleeve: Mic In
+                Sleeve: Mic/Line-in
               </span>,
             ],
             [
