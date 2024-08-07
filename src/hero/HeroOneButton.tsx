@@ -14,9 +14,6 @@ const HeroOneButton = (props: IHeroOneButtonProps) => (
     <div className="text-2xl mt-4 mb-16">{props.description}</div>
 
     {props.button}
-    <div className="text-xl mt-2 text-red-700 font-bold">
-      Currently out of stock, but more are on the way!
-    </div>
   </header>
 );
 

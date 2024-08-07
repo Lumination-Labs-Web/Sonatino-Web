@@ -555,6 +555,15 @@ const DocsContent = () => {
           <h3 className="text-xl font-bold">Audio</h3>
           <List
             items={[
+              <span key="mclk">
+                Some audio libraries disable the master clock pin (
+                <span className="font-mono">MCLK</span>, also called{' '}
+                <span className="font-mono">MCK</span> or{' '}
+                <span className="font-mono">main_clock</span>) by default.
+                Sonatino requires this pin to be enabled for the DAC and ADC to
+                work. If you aren&apos;t hearing any output, please double-check
+                that you&apos;ve configured GPIO 0 as the master clock.
+              </span>,
               <span key="i2s_ports">
                 Sonatino uses separate bit clock (BCLK) and word clock (LRCLK)
                 lines for the DAC and ADC &mdash; as noted in the pinout. The
