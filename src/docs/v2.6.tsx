@@ -106,6 +106,14 @@ const DocsContent = () => {
               &quot;esp32&quot;, and install &quot;
               <span className="font-bold">esp32 by Espressif Systems</span>
               &quot;.
+              <br />
+              <span className="font-bold text-red-900">
+                Note: For compatibility with other libraries (including
+                ESP8266Audio), it&apos;s recommend that you use version 2.x.x of
+                the esp32 board package. Version 3 of the esp32 package is
+                gaining support, but as of now, some libraries may not work with
+                it as expected.
+              </span>
             </span>,
             <span key="esp8266audio">
               Install the <span className="font-bold">ESP8266Audio</span>{' '}
@@ -126,8 +134,8 @@ const DocsContent = () => {
                 Sonatino Examples
               </a>{' '}
               and open{' '}
-              <span className="font-bold">audio-playback-example.ino</span> with
-              the Arduino IDE.
+              <span className="font-bold">v2.x.x/playback/playback.ino</span>{' '}
+              with the Arduino IDE.
             </span>,
             'Make sure both level selection DIP switches on the board are set to the "ON" position (positioned to the right when the board is oriented as shown in the images in this documentation). They should be set to "ON" by default, but can be changed using a small screwdriver or paperclip.',
             'Plug Sonatino into your computer using a USB-C cable. If a green LED does not light up on the board, try a different USB port or cable.',

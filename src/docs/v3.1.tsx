@@ -128,9 +128,8 @@ const DocsContent = () => {
               <a href={AppConfig.github_link} target="_blank" rel="noreferrer">
                 Sonatino Examples
               </a>{' '}
-              and open{' '}
-              <span className="font-bold">audio-playback-example.ino</span> with
-              the Arduino IDE.
+              and open <span className="font-bold">playback/playback.ino</span>{' '}
+              with the Arduino IDE.
             </span>,
             'Make sure both level selection DIP switches on the board are set to the "ON" position (positioned to the right when the board is oriented as shown in the images in this documentation). They should be set to "ON" by default, but can be changed using a small toothpick or paperclip.',
             'Plug Sonatino into your computer using a USB-C cable. If a green LED does not light up on the board, try a different USB port or cable.',
@@ -556,7 +555,7 @@ const DocsContent = () => {
           <List
             items={[
               <span key="mclk">
-                Some audio libraries disable the master clock pin (
+                Some audio libraries disable the master clock (
                 <span className="font-mono">MCLK</span>, also called{' '}
                 <span className="font-mono">MCK</span>,{' '}
                 <span className="font-mono">mck_io_num</span>, or{' '}
