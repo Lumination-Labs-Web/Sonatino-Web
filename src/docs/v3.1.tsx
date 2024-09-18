@@ -505,6 +505,10 @@ const DocsContent = () => {
                       ). If you&apos;ve shut down the amps by setting GPIO 48 to
                       LOW, don&apos;t forget to call{' '}
                       <span className="font-mono">
+                        gpio_hold_en(GPIO_NUM_48)
+                      </span>{' '}
+                      and{' '}
+                      <span className="font-mono">
                         gpio_deep_sleep_hold_en()
                       </span>{' '}
                       before sleeping to keep the pin held low.
