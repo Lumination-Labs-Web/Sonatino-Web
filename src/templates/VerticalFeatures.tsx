@@ -70,7 +70,7 @@ const VerticalFeatures = () => {
           <List
             title="Microcontroller & Storage"
             items={[
-              'Microcontroller: ESP32-S3-WROOM-1 with 16 MB flash and 8 MB PSRAM',
+              'Microcontroller: ESP32-S3-WROOM-1U with 16 MB flash and 8 MB PSRAM',
               'Additional Storage: microSD card slot with SPI interface',
             ]}
           />

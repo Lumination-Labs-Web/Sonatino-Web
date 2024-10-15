@@ -672,7 +672,7 @@ const DocsContent = () => {
             target="_blank"
             rel="noreferrer"
           >
-            ESP32-S3-WROOM-1 Datasheet
+            ESP32-S3-WROOM-1U Datasheet
           </a>
         </p>
 
